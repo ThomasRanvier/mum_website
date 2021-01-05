@@ -7,7 +7,7 @@
     color: black;
     font-size: 50px;
     font-weight: bold;
-    transition: 0.1s;
+    transition: 0.2s;
 }
 
 .close:hover,
@@ -61,4 +61,8 @@
 
 .carousel-item img {
     cursor: zoom-in;
+}
+
+.carousel-item {
+    transition: unset;
 }
