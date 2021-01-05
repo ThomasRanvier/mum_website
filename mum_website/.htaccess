@@ -1,0 +1,13 @@
+ErrorDocument 404 https://www.thomas-ranvier.com/404.php
+ErrorDocument 403 https://www.thomas-ranvier.com/404.php
+
+RewriteEngine On
+
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L,NE,QSA]
+
+RewriteCond %{HTTP_HOST} ^www\.thomas-ranvier\.com$
+RewriteRule ^/?$ "https\:\/\/thomas-ranvier\.com\/" [R=301,L]
+
+# Disable directory browsing
+Options -Indexes

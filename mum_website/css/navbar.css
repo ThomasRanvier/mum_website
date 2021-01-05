@@ -1,0 +1,124 @@
+nav a,
+nav a:hover,
+nav a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    border: solid;
+    border-width: thin;
+    border-radius: 25px;
+    border-color: purple;
+    background: rgb(255, 248, 255);
+    color: purple;
+    font-size: 1.15em;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    padding-left: 20px!important;
+}
+
+.navbar .dropdown-menu {
+    border: solid;
+    border-color: purple;
+    border-width: thin;
+    border-radius: 10px;
+    background: rgb(255, 248, 255);
+    font-size: 0.9em;
+}
+
+.navbar .nav-link {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+}
+
+.navbar a {
+    color: purple;
+}
+
+.navbar ul li {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+.navbar a:hover {
+    background-color: rgb(255, 205, 255);
+    border-radius: 10px;
+    color: purple;
+}
+
+.navbar a.active,
+.navbar .active>a,
+.navbar .nav-item a[aria-expanded="true"] {
+    border-radius: 10px;
+    background-color: purple;
+    color: white!important;
+ }
+
+.navbar-toggler-btn {
+    background-color: purple;
+    color: white;
+    font-size: x-large;
+    padding: 5px 10px 5px 10px;
+    margin-right: 20px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.navbar-toggler-btn:hover {
+    background-color: white;
+    color: purple;
+}
+
+.dropdown-menu.collapsing {
+    display: block;
+}
+
+@media (max-width: 991.98px) {
+    /* Retracted navbar */
+    .dropdown-menu {
+        padding: 0;
+        margin-top: 0!important;
+        border: 0!important;
+    }
+    .dropdown-menu:before {
+        content: "";
+        display: block;
+        padding-top: .5rem;
+    }
+    .dropdown-menu:after {
+        content: "";
+        display: block;
+        padding-bottom: .5rem;
+    }
+    .nav-link {
+        padding-left: 10px!important;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Expanded navbar */
+    .dropdown>div {
+        position: absolute;
+        clip: rect(0.5rem, 9999px, 9999px, -9999px);
+    }
+    .dropdown-menu {
+        height: auto!important;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .dropdown-menu.collapse, .dropdown-menu.sliding {
+        transform: translate(0, -100%);
+    }
+    .dropdown-menu.collapse:not(.show) {
+        display: block;
+    }
+    .dropdown-menu.collapse.show {
+        transform: translate(0, 0);
+    }
+}

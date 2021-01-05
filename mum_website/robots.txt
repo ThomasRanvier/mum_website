@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /css/*
+Disallow: /fonts/*
+Disallow: /images/*
+Disallow: /includes/*
+Disallow: /js/*
+
+Sitemap: https://thomas-ranvier.com/sitemap.xml
+Sitemap: https://www.thomas-ranvier.com/sitemap.xml
+Sitemap: http://thomas-ranvier.com/sitemap.xml
+Sitemap: http://www.thomas-ranvier.com/sitemap.xml
