@@ -55,7 +55,7 @@ class Gallery
             $_active = (($_i == count($_heavy_filenames) - 1 || $_img_name == $_heavy_filenames[$_i]) && !$_active_set);
             $_active_set = ($_active || $_active_set);
             $_longdesc = $_longdesc_prefix . '?img=' . $_heavy_filenames[$_i];
-            echo '<div class="carousel-item align-items-center' . ($_active ? ' active"' : '"') . '><a target="_blank" href="' . $this->_full_heavy_gallery_folder . $_heavy_filenames[$_i] . '"><img loading="lazy" longdesc="' . $_longdesc . '" src="' . $this->_full_heavy_gallery_folder . $_heavy_filenames[$_i] . '"/></a></div>';
+            echo '<div class="carousel-item' . ($_active ? ' active"' : '"') . '><a target="_blank" href="' . $this->_full_heavy_gallery_folder . $_heavy_filenames[$_i] . '"><img loading="lazy" longdesc="' . $_longdesc . '" src="' . $this->_full_heavy_gallery_folder . $_heavy_filenames[$_i] . '"/></a></div>';
         }
         echo '                </div>';
         echo '                <a class="carousel-control-prev" href="#carousel_modal" role="button" data-slide="prev">';
